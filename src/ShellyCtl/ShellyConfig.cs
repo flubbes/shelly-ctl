@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.IO;
-using YamlDotNet;
 using YamlDotNet.Serialization;
 
 public class ShellyConfig
