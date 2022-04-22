@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build:
+  image: mcr.microsoft.com/dotnet/sdk:6.0 AS build
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_MERGE_REQUEST_ID
+  stage: build
+  script:
+    - cd src/ShellyCtl
+    - dotnet publish --output publish -c Release --runtime linux-x64 /p:PublishTrimmed=true

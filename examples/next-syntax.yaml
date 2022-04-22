@@ -1,0 +1,51 @@
+# Unfinished syntax for managing muliple devices with different configuration
+
+default:
+  settings:
+    led_status_disable: true
+    led_power_disable: true
+    coiot_execute_enable: false
+    cloud:
+      enabled: false
+
+plug1:
+  ip: 192.168.2.6
+
+plug2:
+  ip: 192.168.2.7
+
+plug3:
+  ip: 192.168.2.8
+
+plug4:
+  ip: 192.168.2.9
+
+plug5:
+  ip: 192.168.2.10
+
+plug6:
+  ip: 192.168.2.11
+
+plug7:
+  ip: 192.168.2.12
+
+plug8:
+  ip: 192.168.2.13
+
+plug9:
+  ip: 192.168.2.14
+
+plug10:
+  ip: 192.168.2.15
+
+plug11:
+  ip: 192.168.2.16
+
+plug12:
+  ip: 192.168.2.17
+
+plug13:
+  ip: 192.168.2.18
+
+plug14:
+  ip: 192.168.2.19
