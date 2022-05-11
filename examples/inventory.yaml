@@ -5,6 +5,9 @@ default:
     coiot_execute_enable: false
     cloud:
       enabled: false
+    relay:
+      0:
+        default_state: on
 
 inventory:
   - 192.168.2.6
