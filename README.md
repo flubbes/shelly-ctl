@@ -19,4 +19,10 @@ you can streamline your shelly device configuration over all devices listed in t
 
 ## Running from the source folder
 
-`dotnet run -- apply -f ./../../examples/inventory.yaml`
+### MacOs
+
+`dotnet run --project src/ShellyCtl --runtime osx-x64 --self-contained -- apply -f examples/inventory.yaml`
+
+### Linux
+
+`dotnet run --project src/ShellyCtl -- apply -f examples/inventory.yaml`
