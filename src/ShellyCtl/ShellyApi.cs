@@ -9,7 +9,7 @@ public class ShellyApi
         try
         {
             var url = $"http://{device}/settings{prefix}";
-            var result = await client.PostAsync(url, new StringContent("led_status_disable=true"));
+            var result = await client.PostAsync(url, new StringContent($"{property}={value}"));
             Console.WriteLine($" --- {result.StatusCode}");
             return result.StatusCode == System.Net.HttpStatusCode.OK;
         }
